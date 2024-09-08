@@ -4,6 +4,11 @@ import { sequelize } from '../database';
 export class UniversalConfiguration extends Model {}
 
 UniversalConfiguration.init({
+  id: {
+    type: DataTypes.INTEGER,
+    autoIncrement: true,
+    primaryKey: true
+  },
   key: {
     type: DataTypes.STRING,
     allowNull: false,
